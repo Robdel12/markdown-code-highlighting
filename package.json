@@ -1,7 +1,7 @@
 {
   "name": "markdown-code-highlighting",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Ember CLI plugin using Marked and Highlight.js for rendering markdown and syntax highlighting with highlight.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/Robdel12/markdown-code-highlighting",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Robert DeLuca",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
@@ -32,7 +32,11 @@
     "glob": "^4.0.5"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "highlight.js",
+    "marked",
+    "syntax highlighting",
+    "markdown"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
