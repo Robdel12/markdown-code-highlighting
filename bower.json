@@ -15,7 +15,7 @@
     "qunit": "~1.17.1"
   },
   "devDependencies": {
-    "highlight": "https://github.com/isagalaev/highlight.js.git#master",
+    "highlightjs": "~8",
     "marked": "~0.3.2"
   }
 }

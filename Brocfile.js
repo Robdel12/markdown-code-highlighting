@@ -5,9 +5,8 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 var app = new EmberAddon();
 
-app.import("bower_components/highlight/src/highlight.js");
-app.import("bower_components/highlight/src/languages/javascript.js");
-app.import("bower_components/highlight/src/styles/github.css");
+app.import("bower_components/highlightjs/highlight.pack.js");
+app.import("bower_components/highlightjs/styles/github.css");
 app.import("bower_components/marked/lib/marked.js");
 
 // Use `app.import` to add additional libraries to the generated
