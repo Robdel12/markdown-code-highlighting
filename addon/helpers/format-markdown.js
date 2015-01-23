@@ -5,6 +5,7 @@ export function formatMarkdown(value, options) {
 
   marked.setOptions({
     highlight: function(code) {
+      debugger;
       return hljs.highlightAuto(code).value;
     }
   });
