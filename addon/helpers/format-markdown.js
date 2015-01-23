@@ -5,12 +5,11 @@ export function formatMarkdown(value, options) {
 
   marked.setOptions({
     highlight: function(code) {
-      // debugger;
       return hljs.highlightAuto(code).value;
     }
   });
 
-  return new Handlebars.SafeString(window.marked(value));
+  return new Ember.Handlebars.SafeString(window.marked(value));
 }
 
 export default Ember.Handlebars.makeBoundHelper(formatMarkdown);
