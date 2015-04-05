@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
-export function formatMarkdown(value, options) {
-  if(!value || !options){ return; }
+export function formatMarkdown(value) {
+  if(!value){ return; }
 
   marked.setOptions({
     highlight: function(code) {
