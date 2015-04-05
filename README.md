@@ -1,4 +1,4 @@
-# Markdown-code-highlighting
+# Markdown-code-highlighting [![Build Status](https://travis-ci.org/Robdel12/markdown-code-highlighting.svg?branch=master)](https://travis-ci.org/Robdel12/markdown-code-highlighting)
 
 # Usage
 
