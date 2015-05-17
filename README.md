@@ -1,9 +1,8 @@
-# Markdown-code-highlighting [![Build Status](https://travis-ci.org/Robdel12/markdown-code-highlighting.svg?branch=master)](https://travis-ci.org/Robdel12/markdown-code-highlighting)
+# Markdown-code-highlighting [![Build Status](https://travis-ci.org/Robdel12/markdown-code-highlighting.svg?branch=master)](https://travis-ci.org/Robdel12/markdown-code-highlighting) [![Ember Observer Score](http://emberobserver.com/badges/markdown-code-highlighting.svg)](http://emberobserver.com/addons/markdown-code-highlighting)
 
 # Usage
 
-- Install the plugin: `npm install markdown-code-highlighting --save-dev`
-- Run the generator: `ember g markdown-code-highlighting`
+- Install the plugin: `ember install markdown-code-highlighting`
 - In your Brocfile you'll need to import the CSS styling you want for the highlighter. You can see the [full list here](https://highlightjs.org/static/demo/). When you pick one you'll (like github.css) you'll import it by doing: `app.import("bower_components/highlightjs/styles/github.css");`
 - Now format some markdown! Call the helper on anything that has markdown by doing: `{{format-markdown body}}`. `body` is what you're passing in.
 
