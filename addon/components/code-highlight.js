@@ -8,7 +8,7 @@ export default Ember.Component.extend({
   didInsertElement() {
     this._super.apply(this, arguments);
 
-    let content = this.$('.code-block').text().trim();
+    let content = this.$('.hidden-code-block').text().trim();
 
     marked.setOptions({
       highlight: function(code) {

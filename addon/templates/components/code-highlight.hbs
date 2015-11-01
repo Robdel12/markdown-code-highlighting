@@ -1,7 +1,3 @@
-<div class="code-block">
-  {{#if fortmattedCode}}
-    {{{fortmattedCode}}}
-  {{else}}
-    {{yield}}
-  {{/if}}
-</div>
+<div class="hidden-code-block">{{yield}}</div>
+
+{{{fortmattedCode}}}
