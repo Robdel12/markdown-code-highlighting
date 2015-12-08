@@ -22,4 +22,4 @@ export function formatMarkdown(value) {
   return new Ember.Handlebars.SafeString(parsedMarkdown);
 }
 
-export default Ember.Handlebars.makeBoundHelper(formatMarkdown);
+export default Ember.Helper.helper(formatMarkdown);
