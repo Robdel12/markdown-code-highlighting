@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export function formatMarkdown(value) {
+export function formatMarkdown([value]) {
   if(!value){ return; }
 
   marked.setOptions({
@@ -17,9 +17,9 @@ export function formatMarkdown(value) {
   // input: ```javascript\nsomeJavascript()\n```
   // will result in a class: <code class="lang-javascript"></code>
   // and after the following replace: <code class "lang-javascript hljs javascript">...
-  var parsedMarkdown = window.marked(value[0]).replace( /lang-(\w+)/g, "lang-$1 hljs $1");
+  var parsedMarkdown = window.marked(value).replace( /lang-(\w+)/g, "lang-$1 hljs $1");
 
-  return new Ember.Handlebars.SafeString(parsedMarkdown);
+  return new Ember.String.htmlSafe(parsedMarkdown);
 }
 
 export default Ember.Helper.helper(formatMarkdown);

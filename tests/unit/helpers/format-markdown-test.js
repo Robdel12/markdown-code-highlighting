@@ -6,15 +6,15 @@ module('FormatMarkdownHelper');
 
 // Replace this with your real tests.
 test('it should format markdown to HTML', function(assert) {
-  var result = formatMarkdown("# heading");
+  var result = formatMarkdown(["# heading"]);
 
   assert.ok(result);
-  assert.equal(result.string.trim(), '<h1 id="heading">heading</h1>');
+  assert.equal(result.string.trim(), ['<h1 id="heading">heading</h1>']);
 });
 
 test('it should format markdown code to HTML and highlight it', function(assert) {
-  var result = formatMarkdown("```javascript \n var that = this;```");
+  var result = formatMarkdown(["```javascript \n var that = this;```"]);
 
   assert.ok(result);
-  assert.equal(result.string.trim(), '<pre><code class="lang-javascript hljs javascript"> <span class="hljs-keyword">var</span> <span class="hljs-literal">that</span> = <span class="hljs-keyword">this</span>;\n</code></pre>');
+  assert.equal(result.string.trim(), '<pre><code class=\"lang-javascript hljs javascript\"> <span class=\"hljs-keyword\">var</span> that = <span class=\"hljs-keyword\">this</span>;\n</code></pre>');
 });
