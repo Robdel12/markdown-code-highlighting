@@ -19,7 +19,7 @@ export function formatMarkdown([value]) {
   // and after the following replace: <code class "lang-javascript hljs javascript">...
   var parsedMarkdown = window.marked(value).replace( /lang-(\w+)/g, "lang-$1 hljs $1");
 
-  return new Ember.Handlebars.SafeString(parsedMarkdown);
+  return new Ember.String.htmlSafe(parsedMarkdown);
 }
 
 export default Ember.Helper.helper(formatMarkdown);
