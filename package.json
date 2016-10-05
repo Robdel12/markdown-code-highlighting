@@ -1,6 +1,6 @@
 {
   "name": "markdown-code-highlighting",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Ember CLI plugin using Marked and Highlight.js for rendering markdown and syntax highlighting with highlight.js",
   "directories": {
     "doc": "doc",
