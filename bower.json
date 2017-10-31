@@ -1,9 +1,0 @@
-{
-  "name": "markdown-code-highlighting",
-  "dependencies": {
-    "highlightjs": "^9.6.0",
-    "marked": "~0.3.6",
-    "ember": "~2.8.0",
-    "ember-cli-shims": "0.1.1"
-  }
-}

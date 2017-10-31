@@ -1,4 +1,7 @@
-import Ember from 'ember';
+/* global hljs, marked */
+import { helper } from '@ember/component/helper';
+
+import { htmlSafe } from '@ember/string';
 
 export function formatMarkdown([value]) {
   if(!value){ return; }
@@ -19,7 +22,7 @@ export function formatMarkdown([value]) {
   // and after the following replace: <code class "lang-javascript hljs javascript">...
   var parsedMarkdown = window.marked(value).replace( /lang-(\w+)/g, "lang-$1 hljs $1");
 
-  return new Ember.String.htmlSafe(parsedMarkdown);
+  return new htmlSafe(parsedMarkdown);
 }
 
-export default Ember.Helper.helper(formatMarkdown);
+export default helper(formatMarkdown);
