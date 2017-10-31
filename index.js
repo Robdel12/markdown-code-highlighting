@@ -1,4 +1,4 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
   included: function(app) {
     this._super.included(app);
 
-    app.import("bower_components/highlightjs/highlight.pack.js");
-    app.import("bower_components/marked/lib/marked.js");
+    app.import("node_modules/highlightjs/highlight.pack.js");
+    app.import("node_modules/marked/lib/marked.js");
   }
 };

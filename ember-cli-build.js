@@ -1,14 +1,15 @@
-/*jshint node:true*/
-/* global require, module */
-var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+/* eslint-env node */
+'use strict';
+
+const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
-  var app = new EmberAddon(defaults, {
+  let app = new EmberAddon(defaults, {
     // Add options here
   });
 
-  app.import("bower_components/highlightjs/highlight.pack.js");
-  app.import("bower_components/marked/lib/marked.js");
+  app.import("node_modules/highlightjs/highlight.pack.js");
+  app.import("node_modules/marked/lib/marked.js");
   /*
     This build file specifies the options for the dummy test app of this
     addon, located in `/tests/dummy`
