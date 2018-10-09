@@ -1,10 +1,11 @@
 /* global hljs, marked */
-import { helper } from '@ember/component/helper';
-
-import { htmlSafe } from '@ember/string';
+import { helper } from "@ember/component/helper";
+import { htmlSafe } from "@ember/string";
 
 export function formatMarkdown([value]) {
-  if(!value){ return; }
+  if (!value) {
+    return;
+  }
 
   marked.setOptions({
     highlight: function(code) {
@@ -20,7 +21,9 @@ export function formatMarkdown([value]) {
   // input: ```javascript\nsomeJavascript()\n```
   // will result in a class: <code class="lang-javascript"></code>
   // and after the following replace: <code class "lang-javascript hljs javascript">...
-  var parsedMarkdown = window.marked(value).replace( /lang-(\w+)/g, "lang-$1 hljs $1");
+  let parsedMarkdown = window
+    .marked(value)
+    .replace(/lang-(\w+)/g, "lang-$1 hljs $1");
 
   return new htmlSafe(parsedMarkdown);
 }
