@@ -1,7 +1,8 @@
-markdown-code-highlighting
+markdown-code-highlighting [![Build Status](https://travis-ci.org/Robdel12/markdown-code-highlighting.svg?branch=master)](https://travis-ci.org/Robdel12/markdown-code-highlighting) [![Ember Observer Score](http://emberobserver.com/badges/markdown-code-highlighting.svg)](http://emberobserver.com/addons/markdown-code-highlighting)
 ==============================================================================
 
-An Ember addon for rendering markdown with syntax highlighting from `highlight.js`
+An Ember addon for rendering markdown (marked.js) with syntax
+highlighting from `highlight.js`
 
 
 Installation
