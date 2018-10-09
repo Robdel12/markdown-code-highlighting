@@ -1,9 +1,8 @@
-/* eslint-env node */
-'use strict';
+"use strict";
 
 module.exports = {
-  name: 'markdown-code-highlighting',
-  included: function(app) {
+  name: require("./package").name,
+  included(app) {
     this._super.included(app);
 
     app.import("node_modules/highlightjs/highlight.pack.js");
