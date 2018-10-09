@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.2.1](https://github.com/Robdel12/markdown-code-highlighting/tree/v0.2.1) (2018-10-09)
+[Full Changelog](https://github.com/Robdel12/markdown-code-highlighting/compare/v0.2.0...v0.2.1)
+
+**Merged pull requests:**
+
+- Upgrade to Ember 3.4 [\#6](https://github.com/Robdel12/markdown-code-highlighting/pull/6) ([Robdel12](https://github.com/Robdel12))
+
 ## [v0.2.0](https://github.com/Robdel12/markdown-code-highlighting/tree/v0.2.0) (2017-11-01)
 [Full Changelog](https://github.com/Robdel12/markdown-code-highlighting/compare/v0.1.0...v0.2.0)
 
